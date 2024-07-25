@@ -25,7 +25,7 @@ public class StringBuilderMain1_1 {
          * String result = str1 + str2;
          * String str = new StringBuilder().append(str1).append(str2).toString();
          *
-         * 이렇듯 자바가 최적화를 처리해주기 때문에 지금처럼 간단한 경우네는 StringBuilder를 사용하지 않아도 된다.
+         * 이렇듯 자바가 최적화를 처리해주기 때문에 지금처럼 간단한 경우에는 StringBuilder를 사용하지 않아도 된다.
          * 하지만 문자열을 루프 안에서 문자열을 더하는 경우에는 최적화가 이루어지지 않는다.
          */
     }

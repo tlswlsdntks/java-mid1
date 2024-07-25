@@ -24,10 +24,10 @@ public class StringSplitJoinMain {
 //        }
 //        System.out.println("joinStr = " + joinStr);
 
-        String joinedStr = String.join("-", "A", "B", "C");
+        String joinedStr = String.join(",", "A", "B", "C");
         System.out.println("joinedStr = " + joinedStr);
 
-        String result = String.join("-", splitStr);
+        String result = String.join(",", splitStr);
         System.out.println("result = " + result);
     }
 }
