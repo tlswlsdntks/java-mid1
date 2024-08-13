@@ -11,6 +11,7 @@ public class TestString6 {
             //str = str.substring(index + key.length());
             index = str.indexOf(key, index + key.length());
         }
+        //index = -1
         System.out.println("count = " + count);
     }
 }

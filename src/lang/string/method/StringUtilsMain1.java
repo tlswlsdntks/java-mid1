@@ -6,7 +6,10 @@ public class StringUtilsMain1 {
         boolean bool = true;
         Object obj = new Object();
         String str = "Hello, Java!";
-
+        /**
+         * valueOf(Object obj) : 다양한 타입을 문자열로 변환한다.
+         * toCharArray(): 문자열을 문자 배열로 변환한다.
+         */
         String numString = String.valueOf(num);
         System.out.println("numString = " + numString);
         String boolString = String.valueOf(bool);

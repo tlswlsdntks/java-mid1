@@ -5,12 +5,12 @@ public class RefMain1_3 {
         //여러 변수가 하나의 객체를 참조하는 공유참조를 막을 수 있는 방법은 없다.
         Address a = new Address("서울"); //x001
         Address b = a; //x001
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); //Address{value='서울'}
+        System.out.println("b = " + b); //Address{value='서울'}
 
         change(b, "부산");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); //Address{value='부산'}
+        System.out.println("b = " + b); //Address{value='부산'}
     }
 
     private static void change(Address address, String changeAddress) {

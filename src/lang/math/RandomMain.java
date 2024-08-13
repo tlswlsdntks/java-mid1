@@ -9,11 +9,11 @@ public class RandomMain {
         Random random = new Random(1); //seed가 같으면 Random의 결과가 동일하다.
 
         int randomInt = random.nextInt();
-        System.out.println("randomInt = " + randomInt);
+        System.out.println("int형 난수 발생 = " + randomInt);
         double randomDouble = random.nextDouble();
-        System.out.println("randomDouble = " + randomDouble);
+        System.out.println("double형 난수 발생 = " + randomDouble);
         boolean radomBoolean = random.nextBoolean();
-        System.out.println("radomBoolean = " + radomBoolean);
+        System.out.println("boolean형 난수 발생 = " + radomBoolean);
 
         //범위 조회
         int randomRange1 = random.nextInt(10); //0 ~ 9까지 출력
