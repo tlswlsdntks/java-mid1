@@ -26,7 +26,7 @@ public enum AuthGrade {
             case 1 -> new String[]{"메인 화면"};
             case 2 -> new String[]{"메인 화면", "이메일 관리 화면"};
             case 3 -> new String[]{"메인 화면", "이메일 관리 화면", "관리자 회원"};
-            default -> new String[]{};
+            default -> throw new IllegalStateException("Unexpected value: " + level);
         };
     }
 }
