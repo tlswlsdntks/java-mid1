@@ -8,7 +8,7 @@ public class MyIntegerNullMain0 {
         System.out.println(findValue(intArr, 1)); //1
         System.out.println(findValue(intArr, 100)); //-1
         /**
-         * 실행 결과를 보면 입력값이 -1일 때 -1을 반환하고, 배열에 없는 값인 100을 입력해도 같은 1을 반환한다.
+         * 실행 결과를 보면 입력값이 -1일 때 -1을 반환하고, 배열에 없는 값인 100을 입력해도 같은 -1을 반환한다.
          * 어떤 이유로 -1을 반환한 것인지 명확하지 않다.
          */
     }

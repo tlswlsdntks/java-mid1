@@ -5,11 +5,11 @@ public class RefMain1_1 {
         //참조형 변수는 하나의 인스턴스를 공유할 수 있다.
         Address a = new Address("서울");
         Address b = a;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); //Address{value='서울'}
+        System.out.println("b = " + b); //Address{value='서울'}
 
         b.setValue("부산"); //b의 값을 부산으로 변경
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a = " + a); //Address{value='부산'}
+        System.out.println("b = " + b); //Address{value='부산'}
     }
 }
