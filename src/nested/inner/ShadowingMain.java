@@ -1,4 +1,4 @@
-package nested.nested;
+package nested.inner;
 
 public class ShadowingMain {
     public int value = 1;
