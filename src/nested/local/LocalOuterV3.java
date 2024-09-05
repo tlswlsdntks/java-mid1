@@ -36,7 +36,7 @@ public class LocalOuterV3 {
 
     public static void main(String[] args) {
         Printer printer = new LocalOuterV3().process(2);
-        //printer.print()를 나중에 실행한다. process()의 스택 프레임이 사라진 이후에 실행
+        //printer.print()를 process()의 스택 프레임이 사라진 이후에 실행시킨다.
         /**
          * 자바는 지역 클래스의 인스턴스를 생성하는 시점에 필요한 지역 변수를 복사하여 저장한다. 이런 과정을 "변수 캡처"라 한다.
          * 물론 모든 지역 변수를 캡처하는 것이 아니라, 접근이 필요한 지역 변수만을 캡처한다.
