@@ -3,7 +3,7 @@ package time;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 
-public class IsSupprtedMain2 {
+public class IsSupportedMain2 {
     public static void main(String[] args) {
         LocalDate now = LocalDate.now();
 

@@ -15,6 +15,6 @@ public enum Grade {
     //추가
     //DiscountService.discount()
     public int discount(int price) {
-        return price * (discountPercent / 100);
+        return price * discountPercent / 100;
     }
 }
