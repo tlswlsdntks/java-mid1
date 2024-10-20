@@ -5,7 +5,7 @@ public class NetworkServiceV1_2 {
         String address = "http://example.com";
         NetworkClientV1 client = new NetworkClientV1(address);
 
-        client.initError(data); //추가
+        client.initError(data);
 
         String connectResult = client.connect();
         if (isError(connectResult)) {
