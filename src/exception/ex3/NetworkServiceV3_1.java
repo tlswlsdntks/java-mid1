@@ -7,8 +7,8 @@ public class NetworkServiceV3_1 {
     public void sendMessage(String data) {
         String address = "http://example.com";
         NetworkClientV3 client = new NetworkClientV3(address);
-        client.initError(data);
 
+        client.initError(data);
         try {
             client.connect();
             client.send(data);
