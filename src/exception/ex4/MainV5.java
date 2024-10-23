@@ -4,9 +4,9 @@ import exception.ex4.exception.SendExceptionV4;
 
 import java.util.Scanner;
 
-public class MainV4 {
+public class MainV5 {
     public static void main(String[] args) {
-         NetworkServiceV4 networkService = new NetworkServiceV4();
+         NetworkServiceV5 networkService = new NetworkServiceV5();
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
