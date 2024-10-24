@@ -11,12 +11,12 @@ public class MainV5 {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.print("전송할 문자: ");
-            String input = scanner.nextLine();
-            if (input.equals("exit")) {
+            String data = scanner.nextLine();
+            if (data.equals("exit")) {
                 break;
             }
             try {
-                networkService.sendMessage(input);
+                networkService.sendMessage(data);
             } catch (Exception e) {
                 exceptionHandler(e);
             }
