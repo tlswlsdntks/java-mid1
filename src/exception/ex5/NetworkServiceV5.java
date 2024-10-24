@@ -1,4 +1,4 @@
-package exception.ex4;
+package exception.ex5;
 
 public class NetworkServiceV5 {
     public void sendMessage(String data) {

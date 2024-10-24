@@ -1,6 +1,6 @@
-package exception.ex4;
+package exception.ex5;
 
-import exception.ex4.exception.SendExceptionV4;
+import exception.ex5.exception.SendExceptionV5;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class MainV5 {
         // e.printStackTrace(); → e.printStackTrace(System.err); // 스트림이 꼬이는 경우가 발생
 
         // 필요하면 예외별 별도의 추가 처리 가능
-        if (e instanceof SendExceptionV4 sendEx) {
+        if (e instanceof SendExceptionV5 sendEx) {
             System.out.println("[전송 오류] 전송 데이터: " + sendEx.getSendData());
         }
     }
