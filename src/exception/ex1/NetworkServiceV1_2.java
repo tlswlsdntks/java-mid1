@@ -13,7 +13,7 @@ public class NetworkServiceV1_2 {
         }
         String sendResult = client.send(data);
         if (isError(sendResult)) {
-            System.out.println("[네트워크 오류 발생] 오류 코드: " + sendResult);
+            System.out.println("[전송 오류 발생] 오류 코드: " + sendResult);
             return;
         }
         client.disconnect();

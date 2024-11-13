@@ -6,8 +6,8 @@ import exception.ex5.exception.SendExceptionV5;
 public class NetworkClientV5 implements AutoCloseable {
 
     @Override
-    // public void close() throws Exception {
-    public void close() { // 예외를 던지지 않으므로 thorws Exception 제거
+//    public void close() throws Exception { //언체크 예외로 예외를 던지지 않고 있으므로 thorws Exception 제거
+    public void close() {
         System.out.println("NetworkClientV5.close");
         disconnect();
     }

@@ -14,8 +14,7 @@ public class NetworkServiceV3_2 {
             client.connect();
             client.send(data);
             /**
-             * 주의할 점은 예외가 발생할 때 catch를 순서대로 실행하므로,
-             * 더 디테일한 자식을 먼저 잡아야 한다.
+             * 예외가 발생 시 주의할 점은 catch가 순서대로 실행되므로 더 디테일한 예외를 상위에서 먼저 처리해야 한다.
              */
         } catch (ConnectExceptionV3 e) {
             System.out.println("[연결 오류] 주소: " + e.getAddress() + ", 메세지: " + e.getMessage());
