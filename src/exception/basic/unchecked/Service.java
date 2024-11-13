@@ -17,7 +17,7 @@ public class Service {
             //예외 처리 로직
             System.out.println("예외 처리, message = " + e.getMessage());
         }
-        System.out.println("정상 로직");
+        System.out.println("정상 호출");
     }
 
     /**
