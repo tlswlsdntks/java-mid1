@@ -7,23 +7,17 @@ public class StringUtilsMain1 {
         Object obj = new Object();
         String str = "Hello, Java!";
         /**
-         * valueOf(Object obj) : 다양한 타입을 문자열로 변환한다.
+         * valueOf(Object obj): 다양한 타입을 문자열로 변환한다.
          * toCharArray(): 문자열을 문자 배열로 변환한다.
          */
-        String numString = String.valueOf(num);
-        System.out.println("numString = " + numString);
-        String boolString = String.valueOf(bool);
-        System.out.println("boolString = " + boolString);
-        String objString = String.valueOf(obj);
-        System.out.println("objString = " + objString);
-
-        String numString2 = "1" + num; //100
-        System.out.println("numString2 = " + numString2); //1100
+        System.out.println("numString = " + String.valueOf(num)); //100
+        System.out.println("boolString = " + String.valueOf(bool)); //true
+        System.out.println("objString = " + String.valueOf(obj)); //java.lang.Object@404b9385
+        System.out.println("numString2 = " + ("1" + num)); //1100
 
         char[] strCharArray = str.toCharArray();
-        System.out.println("strCharArray = " + strCharArray);
         for (char c : strCharArray) {
-            System.out.print(c);
+            System.out.print(c); //Hello, Java!
         }
     }
 }

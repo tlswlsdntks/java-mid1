@@ -14,15 +14,15 @@ public class WrapperClassMain {
          */
         System.out.println("박싱");
         Integer newInteger = new Integer(10); //미래에 삭제 예정, 대신에 valueOf()를 사용
+        System.out.println("newInteger = " + newInteger);
         /**
          * if (i >= IntegerCache.low && i <= IntegerCache.high)
          *      return IntegerCache.cache[i + (-IntegerCache.low)];
          */
         Integer integerObj = Integer.valueOf(10); //-128 ~ 127 범위 값 재사용(캐시), 불변
-        System.out.println("newInteger = " + newInteger);
-        System.out.println("integerObj = " + integerObj);
         Long longObj = Long.valueOf(100);
         Double doubleObj = Double.valueOf(10.5);
+        System.out.println("integerObj = " + integerObj);
         System.out.println("longObj = " + longObj);
         System.out.println("doubleObj = " + doubleObj);
 

@@ -18,8 +18,8 @@ public class StringBuilderMain1_1 {
         sb.reverse();
         System.out.println("sb = " + sb);
 
-        String str = sb.toString(); //불변객체
-        System.out.println("str = " + str);
+        //불변객체
+        System.out.println("str = " + sb.toString());
 
         /**
          * String result = str1 + str2;

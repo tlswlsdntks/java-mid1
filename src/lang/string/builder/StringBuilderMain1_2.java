@@ -11,7 +11,7 @@ public class StringBuilderMain1_2 {
                 .insert(1, "Java")
                 .delete(4, 8)
                 .reverse()
-                .toString();//불변객체
+                .toString(); //불변객체
 
         System.out.println("str = " + str);
     }

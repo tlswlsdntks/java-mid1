@@ -9,8 +9,7 @@ public class LoopStringBuilderMain {
         }
         long endTime = System.currentTimeMillis();
 
-        String result = sb.toString();
-        System.out.println("result = " + result);
+        System.out.println("result = " + sb.toString());
         String time = endTime - startTime + "ms"; //1/1000초
         System.out.println("time = " + time); //3ms
 

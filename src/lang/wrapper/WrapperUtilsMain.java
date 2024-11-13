@@ -7,12 +7,11 @@ public class WrapperUtilsMain {
         int intValue = Integer.parseInt("10"); //문자열 전용, 기본형 반환
 
         /**
-         * 비교
          * 비교 대상이 동일한 경우: 0
          * 비교 대상이 작은 경우: -1
          * 비교 대상이 큰 경우: 1
          */
-        int compareResult = i1.compareTo(20);
+        int compareResult = i1.compareTo(20); //-1
         System.out.println("compareResult = " + compareResult);
         
         //산술연산
