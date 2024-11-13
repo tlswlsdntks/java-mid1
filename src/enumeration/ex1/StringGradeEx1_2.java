@@ -18,6 +18,6 @@ public class StringGradeEx1_2 {
 
         //소문자
         int gold = discountService.discount("gold", price);
-        System.out.println("GOLD 등급의 할인 금액 = " + gold);
+        System.out.println("gold 등급의 할인 금액 = " + gold);
     }
 }

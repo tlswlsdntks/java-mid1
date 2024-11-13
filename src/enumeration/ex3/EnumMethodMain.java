@@ -18,6 +18,6 @@ public class EnumMethodMain {
         String input = "GOLD";
         //박싱
         Grade gold = Grade.valueOf(input);
-        System.out.println("gold = " + gold); //toString() 오버라이딩 가능
+        System.out.println("GOLD = " + gold); //toString() 오버라이딩 가능
     }
 }
