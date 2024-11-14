@@ -9,6 +9,7 @@ public class ZoneIdMain {
             ZoneId zoneId = ZoneId.of(availableZoneId);
             System.out.println(zoneId + " | " + zoneId.getRules());
         }
+        System.out.println();
 
         ZoneId zoneId = ZoneId.systemDefault();
         System.out.println("ZoneId.systemDefault = " + zoneId);

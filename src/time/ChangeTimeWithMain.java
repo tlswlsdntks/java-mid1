@@ -9,7 +9,7 @@ import java.time.temporal.TemporalAdjusters;
 public class ChangeTimeWithMain {
     public static void main(String[] args) {
         LocalDateTime dt = LocalDateTime.of(2024, 11, 14, 13, 30, 59);
-        System.out.println("dt = " + dt);
+        System.out.println("현재 시간날짜 = " + dt);
 
         //불변객체 반환
         System.out.println("년도 변경 = " + dt.with(ChronoField.YEAR, 2025));

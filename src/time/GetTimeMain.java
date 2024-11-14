@@ -12,6 +12,7 @@ public class GetTimeMain {
         System.out.println("HOUR_OF_DAY = " + dt.get(ChronoField.HOUR_OF_DAY));
         System.out.println("MINUTE_OF_HOUR = " + dt.get(ChronoField.MINUTE_OF_HOUR));
         System.out.println("SECOND_OF_MINUTE = " + dt.get(ChronoField.SECOND_OF_MINUTE));
+        System.out.println();
 
         //편의 메서드 제공
         System.out.println("YEAR = " + dt.getYear());
@@ -20,9 +21,10 @@ public class GetTimeMain {
         System.out.println("HOUR_OF_DAY = " + dt.getHour());
         System.out.println("MINUTE_OF_HOUR = " + dt.getMinute());
         System.out.println("SECOND_OF_MINUTE = " + dt.getSecond());
+        System.out.println();
 
         //편의 메서드에 없음
-        System.out.println("MINUTE_OF_DAY = " + dt.get(ChronoField.MINUTE_OF_DAY)); //810
-        System.out.println("SECOND_OF_DAY = " + dt.get(ChronoField.SECOND_OF_DAY)); //48659
+        System.out.println("MINUTE_OF_DAY = " + dt.get(ChronoField.MINUTE_OF_DAY)); //810: 13.5*60
+        System.out.println("SECOND_OF_DAY = " + dt.get(ChronoField.SECOND_OF_DAY)); //48659: (13.5*60*60)+59
     }
 }

@@ -11,9 +11,8 @@ public class PeriodMain {
 
         //계산
         LocalDate currentDate = LocalDate.of(2030, 1, 1);
-        LocalDate plusDate = currentDate.plus(period);
         System.out.println("currentDate = " + currentDate);
-        System.out.println("plusDate = " + plusDate);
+        System.out.println("plusDate = " + currentDate.plus(period));
 
         //기간 차이
         LocalDate startDate = LocalDate.of(2023, 1, 1);
