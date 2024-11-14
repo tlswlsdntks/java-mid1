@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class TestLoopPlus {
     public static void main(String[] args) {
-        LocalDate ld = LocalDate.of(2024, 1, 1);
-        for (int i = 0; i < 5; i++) {
+        LocalDate ld = LocalDate.of(2024, 11, 14);
+        for (int i = 0; i < 3; i++) {
             System.out.println("날짜 " + (i + 1) + ": " + ld.plusWeeks(i * 2));
         }
     }

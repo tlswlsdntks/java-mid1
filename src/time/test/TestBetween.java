@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 
 public class TestBetween {
     public static void main(String[] args) {
-        LocalDate startDate = LocalDate.of(2024, 1, 1);
+        LocalDate startDate = LocalDate.of(2024, 11, 14);
         LocalDate endDate = LocalDate.of(2024, 11, 21);
         Period period = Period.between(startDate, endDate);
         long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);

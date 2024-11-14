@@ -9,14 +9,8 @@ public class ChangeTimePlusMain {
         LocalDateTime dt = LocalDateTime.of(2018, 1, 1, 13, 30, 59);
         System.out.println("dt = " + dt);
 
-        LocalDateTime plusDt1 = dt.plus(10, ChronoUnit.YEARS);
-        System.out.println("plusDt1 = " + plusDt1);
-
-        LocalDateTime plusDt2 = dt.plusYears(10);
-        System.out.println("plusDt2 = " + plusDt2);
-
-        Period period = Period.ofYears(10);
-        LocalDateTime plustDt3 = dt.plus(period);
-        System.out.println("plustDt3 = " + plustDt3);
+        System.out.println("10년 후 = " + dt.plus(10, ChronoUnit.YEARS));
+        System.out.println("10년 후 = " + dt.plusYears(10));
+        System.out.println("10년 후 = " + dt.plus(Period.ofYears(10)));
     }
 }
