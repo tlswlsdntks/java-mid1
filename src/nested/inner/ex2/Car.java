@@ -8,7 +8,6 @@ public class Car {
     public Car(String model, int chargeLevel) {
         this.model = model;
         this.chargeLevel = chargeLevel;
-        //this.engine = new Engine(); // java.lang.NullPointerException
         this.engine = new Engine();
     }
 
