@@ -15,15 +15,8 @@ public class Library {
             System.out.println("도서관 저장 공간이 부족합니다.");
             return;
         }
-
         //정상 로직 처리
         books[bookCount++] = new Books(title, author);
-
-//        if (bookCount < books.length) {
-//            books[bookCount++] = new Books(title, author);
-//        } else {
-//            System.out.println("도서관 저장 공간이 부족합니다.");
-//        }
     }
 
     public void showBooks() {
