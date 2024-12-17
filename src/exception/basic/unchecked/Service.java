@@ -24,7 +24,8 @@ public class Service {
      * 예외를 잡지 않아도 된다. 자연스럽게 상위로 넘어간다.
      * 체크 예외와 다르게 throws 에외 선언을 하지 않아도 된다.
      */
-    public void callThrows() {
+    public void callThrows() { //throws MyCheckedException
         client.call();
+        System.out.println("정상 호출");
     }
 }

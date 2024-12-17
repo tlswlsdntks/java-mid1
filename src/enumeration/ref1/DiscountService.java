@@ -5,7 +5,6 @@ public class DiscountService {
         /**
          * CTRL + ALT + N: INLINE VARIABLE
          */
-        //GOLD → 10000 * (20 / 100) = 2000
         return price * classGrade.getDiscountPercent() / 100;
     }
 }

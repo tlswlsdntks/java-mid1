@@ -14,6 +14,7 @@ public class EnumMethodMain {
              */
             System.out.println("name = " + value.name() + ", ordinal = " + value.ordinal()); //순번
         }
+
         //String → enum 변환, 잘못된 문자면 IllegalArgumentException 발생
         String input = "GOLD";
         //박싱

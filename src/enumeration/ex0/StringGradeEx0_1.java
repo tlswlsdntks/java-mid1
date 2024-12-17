@@ -1,7 +1,5 @@
 package enumeration.ex0;
 
-import enumeration.DiscountService;
-
 public class StringGradeEx0_1 {
     public static void main(String[] args) {
         int price = 10000;

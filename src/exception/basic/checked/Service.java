@@ -20,8 +20,9 @@ public class Service {
      * 체크 예외를 밖으로 던지는 코드
      * 체크 예외는 예외를 잡지 않고 밖으로 던지려면 throws 예외를 메서드에 필수로 선언해야 한다.
      */
-    public void catchThrows() throws MyCheckedException {
+    public void callThrows() throws MyCheckedException {
         client.call(); //throw new MyCheckedException("ex");
+        System.out.println("정상 호출");
     }
 
 }

@@ -11,8 +11,8 @@ public class ClassRefMain {
         System.out.println("class GOLD = " + ClassGrade.GOLD.getClass()); //ClassGrade
         System.out.println("class DIAMOND = " + ClassGrade.DIAMOND.getClass()); //ClassGrade
 
-        System.out.println("ref BASIC = " + ClassGrade.BASIC); //1d81eb93
-        System.out.println("ref GOLD = " + ClassGrade.GOLD); //7291c18f
-        System.out.println("ref DIAMOND = " + ClassGrade.DIAMOND); //34a245ab
+        System.out.println("ref BASIC = " + ClassGrade.BASIC); //x001
+        System.out.println("ref GOLD = " + ClassGrade.GOLD); //x002
+        System.out.println("ref DIAMOND = " + ClassGrade.DIAMOND); //x003
     }
 }
