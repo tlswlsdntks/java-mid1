@@ -5,10 +5,12 @@ import java.lang.reflect.Method;
 
 public class ClassMetaMain {
     public static void main(String[] args) throws Exception {
-        //Class 조회
-        Class clazz = String.class; //1.클래스에서 조회
-        //Class clazz = new String().getClass(); //2.인스턴스에서 조회
-        //Class clazz = Class.forName("java.lang.String"); //3.문자열로 조회: throws Exception 필요
+        //1. 클래스에서 조회
+        Class clazz = String.class;
+        //2. 인스턴스에서 조회
+        //Class clazz = new String().getClass();
+        //3. 문자열로 조회: throws Exception 예외처리가 필요하다.
+        //Class clazz = Class.forName("java.lang.String");
 
         //모든 필드 출력
         Field[] fields = clazz.getDeclaredFields();
