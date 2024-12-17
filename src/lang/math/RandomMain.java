@@ -5,7 +5,7 @@ import java.util.Random;
 public class RandomMain {
     public static void main(String[] args) {
         //랜덤
-        //Random random = new Random();
+//        Random random = new Random();
         Random random = new Random(1); //seed가 같으면 Random의 결과가 동일하다.
 
         System.out.println("int형 난수 발생 = " + random.nextInt());

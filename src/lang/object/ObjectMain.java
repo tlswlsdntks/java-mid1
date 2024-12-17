@@ -7,7 +7,6 @@ public class ObjectMain {
         child.parentMethod();
 
         //toString(): Object 클래스의 메서드
-        String string = child.toString();
-        System.out.println(string); //lang.object.Child@4e50df2e
+        System.out.println(child.toString()); //lang.object.Child@4e50df2e
     }
 }

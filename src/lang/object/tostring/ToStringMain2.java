@@ -12,9 +12,6 @@ public class ToStringMain2 {
         System.out.println(dog1.toString());
         System.out.println(dog2.toString());
 
-        /**
-         * System.out.println() 메서드는 내부에서 toString()을 호출한다.
-         */
         System.out.println("2. println 내부에서 toString() 호출");
         System.out.println(car);
         System.out.println(dog1);
@@ -26,8 +23,9 @@ public class ToStringMain2 {
         ObjectPrinter.print(dog2);
 
         System.out.println("4. 객체의 참조값 확인");
-        System.out.println("dog1 = " + Integer.toHexString(System.identityHashCode(dog1))); //30dae81
-        System.out.println("dog2 = " + Integer.toHexString(System.identityHashCode(dog2))); //1b2c6ec2
+        System.out.println("car = " + Integer.toHexString(System.identityHashCode(car))); //3b07d329
+        System.out.println("dog1 = " + Integer.toHexString(System.identityHashCode(dog1))); //7b23ec81
+        System.out.println("dog2 = " + Integer.toHexString(System.identityHashCode(dog2))); //6acbcfc0
     }
 
 }
