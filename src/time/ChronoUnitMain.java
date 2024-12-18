@@ -9,10 +9,9 @@ public class ChronoUnitMain {
             System.out.println(value);
         }
         System.out.println();
-        System.out.println("한 시간은 몇 초: " + ChronoUnit.HOURS.getDuration().getSeconds());
-        System.out.println("하루는 몇 초: " + ChronoUnit.DAYS.getDuration().getSeconds());
+        System.out.println("한 시간은 몇 초? " + ChronoUnit.HOURS.getDuration().getSeconds());
+        System.out.println("하루는 몇 초? " + ChronoUnit.DAYS.getDuration().getSeconds());
 
-        //시간 차이 계산
 //        LocalTime lt1 = LocalTime.of(1, 10, 0);
 //        LocalTime lt2 = LocalTime.of(1, 20, 0);
         LocalTime lt1 = LocalTime.now();

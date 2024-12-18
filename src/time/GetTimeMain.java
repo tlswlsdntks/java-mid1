@@ -7,7 +7,7 @@ public class GetTimeMain {
     public static void main(String[] args) {
 //        LocalDateTime ldt = LocalDateTime.of(2030, 1, 1, 13, 30, 59);
         LocalDateTime ldt = LocalDateTime.now();
-        System.out.println("특정 시간: " + ldt);
+        System.out.println("현재 시간대: " + ldt);
         System.out.println("년: " + ldt.get(ChronoField.YEAR));
         System.out.println("월: " + ldt.get(ChronoField.MONTH_OF_YEAR));
         System.out.println("일: " + ldt.get(ChronoField.DAY_OF_MONTH));
@@ -26,7 +26,7 @@ public class GetTimeMain {
         System.out.println();
 
         //편의 메서드 없음
-        System.out.println("00시 00분은 몇 초: " + ldt.get(ChronoField.MINUTE_OF_DAY));
-        System.out.println("00일 00시 00분 00초는 몇 초: " + ldt.get(ChronoField.SECOND_OF_DAY));
+        System.out.println("00시 00분은 몇 초? " + ldt.get(ChronoField.MINUTE_OF_DAY));
+        System.out.println("00일 00시 00분 00초는 몇 초? " + ldt.get(ChronoField.SECOND_OF_DAY));
     }
 }

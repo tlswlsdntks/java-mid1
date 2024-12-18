@@ -7,7 +7,7 @@ public class LocalDateMain {
 //        LocalDate ld1 = LocalDate.now();
 //        LocalDate ld2 = LocalDate.of(2013, 11, 21);
         LocalDate ld1 = LocalDate.now();
-        System.out.println("특정 날짜: " + ld1);
-        System.out.println("특정 날짜 + 10일: " + ld1.plusDays(10));
+        System.out.println("현재 날짜: " + ld1);
+        System.out.println("현재 날짜 + 10일: " + ld1.plusDays(10));
     }
 }

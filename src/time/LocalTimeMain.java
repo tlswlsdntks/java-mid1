@@ -7,7 +7,7 @@ public class LocalTimeMain {
 //        LocalTime lt1 = LocalTime.now();
 //        LocalTime lt2 = LocalTime.of(9, 10, 30);
         LocalTime lt1 = LocalTime.now();
-        System.out.println("특정 시간: " + lt1);
-        System.out.println("특정 시간 + 30초: " + lt1.plusSeconds(30));
+        System.out.println("현재 시간: " + lt1);
+        System.out.println("현재 시간 + 30초: " + lt1.plusSeconds(30));
     }
 }

@@ -10,8 +10,8 @@ public class TestZone {
         ZonedDateTime london = seoul.withZoneSameInstant(ZoneId.of("Europe/London"));
         ZonedDateTime newYork = seoul.withZoneSameInstant(ZoneId.of("America/New_York"));
 
-        System.out.println("서울 시간: " + seoul);
-        System.out.println("런던 시간: " + london);
-        System.out.println("뉴욕 시간: " + newYork);
+        System.out.println("서울 지역 시간대: " + seoul);
+        System.out.println("런던 지역 시간대: " + london);
+        System.out.println("뉴욕 지역 시간대: " + newYork);
     }
 }
