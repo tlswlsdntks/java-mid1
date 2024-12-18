@@ -7,6 +7,6 @@ public class TestString10 {
         for (String fruit : splitFruits) {
             System.out.println(fruit);
         }
-        System.out.println(String.join("→", splitFruits));
+        System.out.println(String.join(" → ", splitFruits));
     }
 }

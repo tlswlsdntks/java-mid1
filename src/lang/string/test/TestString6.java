@@ -9,7 +9,7 @@ public class TestString6 {
         while (index >= 0) {
             count++;
             index = str.indexOf(key, index + key.length());
-        } //-1
-        System.out.println("count = " + count); //3
+        }
+        System.out.println("count = " + count);
     }
 }

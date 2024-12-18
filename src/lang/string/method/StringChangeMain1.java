@@ -16,6 +16,7 @@ public class StringChangeMain1 {
         System.out.println("str.concat(\"!!!\") = " + str.concat("!!!"));
         System.out.println("str + \"!!!\" = " + str + "!!!");
         System.out.println("str.replace(\"Java\", \"World\") =  " + str.replace("Java", "World"));
+        System.out.println("str.replaceAll(\"[J]\", \"L\") = " + str.replaceAll("[J]", "L"));
         System.out.println("str.replaceFirst(\"Java\", \"World\") = " + str.replaceFirst("Java", "World"));
     }
 }

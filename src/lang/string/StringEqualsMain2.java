@@ -12,7 +12,6 @@ public class StringEqualsMain2 {
     }
 
     private static boolean isSame(String x, String y) {
-        //return x == y; //false, true
-        return x.equals(y); //true, true
+        return x.equals(y);
     }
 }
