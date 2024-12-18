@@ -11,10 +11,10 @@ public class LocalOuterV2 {
 
             @Override
             public void print() {
-                System.out.println("value = " + value); //0
-                System.out.println("localVar = " + localVar); //1
-                System.out.println("paramVar = " + paramVar); //2
-                System.out.println("outInstnaceVar = " + outInstnaceVar); //3
+                System.out.println("value = " + value);
+                System.out.println("localVar = " + localVar);
+                System.out.println("paramVar = " + paramVar);
+                System.out.println("outInstnaceVar = " + outInstnaceVar);
             }
         }
 
