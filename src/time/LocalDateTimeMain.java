@@ -6,28 +6,30 @@ import java.time.LocalTime;
 
 public class LocalDateTimeMain {
     public static void main(String[] args) {
-        LocalDateTime nowDt = LocalDateTime.now();
-        LocalDateTime ofDt = LocalDateTime.of(2016, 8, 16, 8, 10, 1);
-        System.out.println("현재 날짜시간 = " + nowDt);
-        System.out.println("지정 날짜시간 = " + ofDt);
+//        LocalDateTime ldt1 = LocalDateTime.now();
+//        LocalDateTime ldt2 = LocalDateTime.of(2016, 8, 16, 8, 10, 1);
+        LocalDateTime ldt1 = LocalDateTime.now();
+        LocalDateTime ldt2 = ldt1.plusYears(1);
+        System.out.println("특정 시간: " + ldt1);
+        System.out.println("특정 시간 + 1년: " + ldt2);
+        System.out.println();
 
-        //날짜와 시간 분리
-        LocalDate localDate = ofDt.toLocalDate();
-        LocalTime localTime = ofDt.toLocalTime();
-        System.out.println("localTime = " + localTime);
-        System.out.println("localDate = " + localDate);
-
-        //날짜와 시간 합체
-        LocalDateTime localDateTime = LocalDateTime.of(localDate, localTime);
-        System.out.println("localDateTime = " + localDateTime);
+        //날짜와 시간의 분리/합체
+        LocalTime lt = ldt1.toLocalTime();
+        LocalDate ld = ldt1.toLocalDate();
+        System.out.println("날짜 분리: " + ld);
+        System.out.println("시간 분리: " + lt);
+        System.out.println("날짜와 시간 합체: " + LocalDateTime.of(ld, lt));
+        System.out.println();
 
         //특정 시간 이후
-        System.out.println("지정 날짜시간 + 1000일 = " + ofDt.plusDays(1000));
-        System.out.println("지정 날짜시간 + 1년 = " + ofDt.plusYears(1));
+        System.out.println("특정 시간 + 1000일: " + ldt2.plusDays(1000));
+        System.out.println("특정 시간 + 1년: " + ldt2.plusYears(1));
+        System.out.println();
         
         //비교
-        System.out.println("현재 날짜시간이 지정 날짜시간보다 이전인가? " + nowDt.isBefore(ofDt));
-        System.out.println("현재 날짜시간이 지정 날짜시간보다 이후인가? " + nowDt.isAfter(ofDt));
-        System.out.println("현재 날짜시간이 지정 날짜시간보다 같은가? " + nowDt.isEqual(ofDt));
+        System.out.println("특정 날짜 이전인가? " + ldt1.isBefore(ldt2));
+        System.out.println("특정 날짜 이후인가? " + ldt1.isAfter(ldt2));
+        System.out.println("특정 날짜와 같은가? " + ldt1.isEqual(ldt2));
     }
 }

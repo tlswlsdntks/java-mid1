@@ -5,8 +5,7 @@ import java.time.temporal.ChronoField;
 
 public class IsSupportedMain1 {
     public static void main(String[] args) {
-        LocalDate now = LocalDate.now();
-        int minute = now.get(ChronoField.SECOND_OF_MINUTE); //Exception in thread "main" java.time.temporal.UnsupportedTemporalTypeException
-        System.out.println("minute = " + minute);
+        LocalDate ld = LocalDate.now();
+        System.out.println("한 시간은 몇 초: " + ld.get(ChronoField.SECOND_OF_MINUTE)); //Exception in thread "main" java.time.temporal.UnsupportedTemporalTypeException
     }
 }
