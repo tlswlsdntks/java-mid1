@@ -1,7 +1,6 @@
 package nested.anonymous.ex;
 
 public class Ex0RefMain {
-
     public static void hello(String str) {
         System.out.println("프로그램 시작");
         //변하는 부분 시작

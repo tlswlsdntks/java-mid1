@@ -1,9 +1,6 @@
 package nested.anonymous;
 
-import nested.anonymous.Printer;
-
 public class AnonymousOuter {
-
     private int outInstnaceVar = 3;
 
     public void process(int paramVar) {

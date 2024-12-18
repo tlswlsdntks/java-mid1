@@ -3,7 +3,6 @@ package nested.anonymous.ex;
 import java.util.Random;
 
 public class Ex1RefMainV1 {
-
     static class Dice implements Process {
         @Override
         public void run() {
