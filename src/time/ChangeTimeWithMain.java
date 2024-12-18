@@ -8,17 +8,19 @@ import java.time.temporal.TemporalAdjusters;
 
 public class ChangeTimeWithMain {
     public static void main(String[] args) {
-        LocalDateTime dt = LocalDateTime.of(2024, 11, 14, 13, 30, 59);
-        System.out.println("현재 시간날짜 = " + dt);
+//        LocalDateTime ldt = LocalDateTime.of(2024, 11, 14, 13, 30, 59);
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println("특정 시간: " + ldt);
 
         //불변객체 반환
-        System.out.println("년도 변경 = " + dt.with(ChronoField.YEAR, 2025));
-        System.out.println("년도 변경 = " + dt.withYear(2025));
+        //년도 변경
+        System.out.println("년도 변경: " + ldt.with(ChronoField.YEAR, 2025));
+        System.out.println("년도 변경: " + ldt.withYear(2025));
 
         //다음주 금요일
-        System.out.println("다음 금요일 = " + dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)));
+        System.out.println("다음주 금요일: " + ldt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)));
 
-        //이번 달의 마지막 일요일
-        System.out.println("같은 달의 마지막 일요일 = " + dt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)));
+        //이번 달 마지막 일요일
+        System.out.println("이번달 마지막 일요일: " + ldt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)));
     }
 }

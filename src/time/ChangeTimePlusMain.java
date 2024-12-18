@@ -6,11 +6,11 @@ import java.time.temporal.ChronoUnit;
 
 public class ChangeTimePlusMain {
     public static void main(String[] args) {
-        LocalDateTime dt = LocalDateTime.of(2018, 1, 1, 13, 30, 59);
-        System.out.println("현재 시간날짜 = " + dt);
-
-        System.out.println("지정 시간날짜 + 10년 = " + dt.plus(10, ChronoUnit.YEARS));
-        System.out.println("지정 시간날짜 + 10년 = " + dt.plusYears(10));
-        System.out.println("지정 시간날짜 + 10년 = " + dt.plus(Period.ofYears(10)));
+//        LocalDateTime ldt = LocalDateTime.of(2018, 1, 1, 13, 30, 59);
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println("특정 시간: " + ldt);
+        System.out.println("특정 시간 + 10년: " + ldt.plus(10, ChronoUnit.YEARS));
+        System.out.println("특정 시간 + 10년: " + ldt.plus(Period.ofYears(10)));
+        System.out.println("특정 시간 + 10년: " + ldt.plusYears(10));
     }
 }
