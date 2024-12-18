@@ -1,11 +1,9 @@
 package nested.local;
 
 public class LocalOuterV1 {
-
     private int outInstnaceVar = 3;
 
     public void process(int paramVar) {
-
         int localVar = 1;
 
         class LocalPrinter {

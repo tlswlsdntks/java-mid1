@@ -3,11 +3,9 @@ package nested.local;
 import java.lang.reflect.Field;
 
 public class LocalOuterV3 {
-
     private int outInstnaceVar = 3;
 
     public Printer process(int paramVar) {
-        
         int localVar = 1; //1. 지역변수는 스택 프레임이 종료되는 순간 함께 제거된다.
 
         class LocalPrinter implements Printer {
