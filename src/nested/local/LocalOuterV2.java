@@ -18,8 +18,7 @@ public class LocalOuterV2 {
             }
         }
 
-        LocalPrinter printer = new LocalPrinter();
-        printer.print();
+        new LocalPrinter().print();
     }
 
     public static void main(String[] args) {

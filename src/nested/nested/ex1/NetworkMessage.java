@@ -7,6 +7,7 @@ public class NetworkMessage {
     public NetworkMessage(String content) {
         this.content = content;
     }
+
     public void print() {
         System.out.println(content);
     }

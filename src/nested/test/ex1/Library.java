@@ -1,11 +1,11 @@
 package nested.test.ex1;
 
 public class Library {
-    private Books[] books;
+    private Book[] books;
     private int bookCount;
 
     public Library(int size) {
-        books = new Books[size];
+        books = new Book[size];
         this.bookCount = 0;
     }
 
@@ -16,7 +16,7 @@ public class Library {
             return;
         }
         //정상 로직 처리
-        books[bookCount++] = new Books(title, author);
+        books[bookCount++] = new Book(title, author);
     }
 
     public void showBooks() {
@@ -26,12 +26,12 @@ public class Library {
         }
     }
 
-    private static class Books {
+    private static class Book {
         private String title;
 
         private String author;
 
-        public Books(String title, String author) {
+        public Book(String title, String author) {
             this.title = title;
             this.author = author;
         }

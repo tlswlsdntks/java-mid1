@@ -23,12 +23,12 @@ public class LocalOuterV3 {
             }
         }
 
-        return new LocalPrinter(); //2. printer.print(); 를 여기서 실행하지 않고 Printer 인스턴스만 반환한다.
+        return new LocalPrinter(); //2. new LocalPrinter().print() 를 여기서 실행하지 않고 Printer 인스턴스만 반환한다.
     }
 
     public static void main(String[] args) {
         Printer printer = new LocalOuterV3().process(2);
-        printer.print(); //3. printer.print()를 process()의 스택 프레임이 사라진 이후에 실행시킨다.
+        printer.print(); //3. printer.print() 를 new LocalOuterV3().process(2) 의 스택 프레임이 사라진 이후에 실행시킨다.
 
         //4. 캡처된 변수가 출력된다.
         /**
