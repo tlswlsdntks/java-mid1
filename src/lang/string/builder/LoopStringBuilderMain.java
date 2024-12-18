@@ -9,7 +9,7 @@ public class LoopStringBuilderMain {
         }
         long endTime = System.currentTimeMillis();
 
-        System.out.println("result = " + sb.toString());
+//        System.out.println("result = " + sb.toString());
         String time = endTime - startTime + "ms"; //1/1000초
         System.out.println("time = " + time); //3ms
 
@@ -20,5 +20,4 @@ public class LoopStringBuilderMain {
          * StringBuilder는 멀티 스레드 상황에 안전하지 않지만 동기화 오버헤드가 없으므로 속도가 빠르다.
          */
     }
-
 }

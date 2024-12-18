@@ -13,6 +13,9 @@ public class StringComparisonMain {
          * startsWith(String prefix): 문자열이 특정 접두사로 시작하는지 확인한다.
          * endsWith(String suffix): 문자열이 특정 접미사로 끝나는지 확인한다.
          */
+        System.out.println("str1 = " + str1);
+        System.out.println("str2 = " + str2);
+        System.out.println("str3 = " + str3);
         System.out.println("str1.equals(str2) = " + str1.equals(str2));
         System.out.println("str1.equalsIgnoreCase(str2) = " + str1.equalsIgnoreCase(str2));
         System.out.println("\"b\".compareTo(\"a\") = " + "b".compareTo("a"));

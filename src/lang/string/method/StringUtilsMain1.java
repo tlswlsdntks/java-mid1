@@ -10,14 +10,17 @@ public class StringUtilsMain1 {
          * valueOf(Object obj): 다양한 타입을 문자열로 변환한다.
          * toCharArray(): 문자열을 문자 배열로 변환한다.
          */
-        System.out.println("numString = " + String.valueOf(num)); //100
-        System.out.println("boolString = " + String.valueOf(bool)); //true
-        System.out.println("objString = " + String.valueOf(obj)); //java.lang.Object@404b9385
-        System.out.println("numString2 = " + ("1" + num)); //1100
-
+        System.out.println("num = " + num);
+        System.out.println("bool = " + bool);
+        System.out.println("obj = " + obj);
+        System.out.println("str = " + str);
+        System.out.println("String.valueOf(num) = " + String.valueOf(num));
+        System.out.println("String.valueOf(bool) = " + String.valueOf(bool));
+        System.out.println("String.valueOf(obj) = " + String.valueOf(obj));
+        System.out.println("(\"1\" + num) = " + ("1" + num));
         char[] strCharArray = str.toCharArray();
         for (char c : strCharArray) {
-            System.out.print(c); //Hello, Java!
+            System.out.println("str.toCharArray() = " + c);
         }
     }
 }
