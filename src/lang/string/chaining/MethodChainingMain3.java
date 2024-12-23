@@ -11,7 +11,7 @@ public class MethodChainingMain3 {
          * }
          */
         ValueAdder adder = new ValueAdder();
-        int result = adder.add(1).add(2).add(3).getValue(); //메서드 체이닝
+        int result = adder.add(1).add(2).add(3).getValue();
         System.out.println("result = " + result);
     }
 }
