@@ -12,7 +12,7 @@ public class NetworkClientV4 {
         this.address = address;
     }
 
-    public void connect() { //throws ConnectExceptionV4
+    public void connect() {
         if (connectError) {
             throw new ConnectExceptionV4(address, address + " 서버 연결 실패");
         }
@@ -20,7 +20,7 @@ public class NetworkClientV4 {
         System.out.println(address + " 서버 연결 성공");
     }
 
-    public void send(String data) { //throws SendExceptionV4
+    public void send(String data) {
         if (sendError) {
             throw new SendExceptionV4(data, address + " 서버에 데이터 전송 실패");
         }
