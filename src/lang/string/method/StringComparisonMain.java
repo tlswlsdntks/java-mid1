@@ -23,7 +23,7 @@ public class StringComparisonMain {
         System.out.println("str1.compareTo(str3) = " + str1.compareTo(str3));
         System.out.println("str1.compareToIgnoreCase(str2) = " + str1.compareToIgnoreCase(str2));
         System.out.println("str1.startsWith(\"Hello\") = " + str1.startsWith("Hello"));
-        System.out.println("str1.endsWith(\"Hello\") = " + str1.endsWith("Java!"));
+        System.out.println("str1.endsWith(\"Java!\") = " + str1.endsWith("Java!"));
 
     }
 }
