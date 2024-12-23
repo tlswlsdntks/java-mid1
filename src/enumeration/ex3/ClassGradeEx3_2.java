@@ -10,13 +10,13 @@ public class ClassGradeEx3_2 {
         int gold = discountService.discount(Grade.GOLD, price);
         int diamond = discountService.discount(Grade.DIAMOND, price);
 
-        System.out.println("BASIC 등급의 할인 금액 = " + basic);
-        System.out.println("GOLD 등급의 할인 금액 = " + gold);
-        System.out.println("DIAMOND 등급의 할인 금액 = " + diamond);
+        System.out.println("BASIC 등급의 할인된 금액 = " + basic);
+        System.out.println("GOLD 등급의 할인된 금액 = " + gold);
+        System.out.println("DIAMOND 등급의 할인된 금액 = " + diamond);
 
         //존재하지 않는 등급
-//        Grade newClassGrade = new Grade(); //enum 생성불가
+//        Grade newClassGrade = new Grade(); //enum types may not be instantiated
 //        int result = discountService.discount(newClassGrade, price);
-//        System.out.println("NEW_CLASS_GRADE 등급의 할인 금액 = " + newClassGrade);
+//        System.out.println("NEW_CLASS_GRADE 등급의 할인된 금액 = " + newClassGrade);
     }
 }

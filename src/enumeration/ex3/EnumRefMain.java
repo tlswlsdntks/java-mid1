@@ -12,8 +12,8 @@ public class EnumRefMain {
     }
 
     /**
-     * enum 은 toString()을 재정의 하기 때문에 직접 확인할 수 없다.
-     * 그러므로 참조값을 구하기 위해 refValue()를 추가로 생성하였다.
+     * enum 은 toString() 을 재정의 하기 때문에 직접 확인할 수 없다.
+     * 그러므로 참조값을 구하기 위해 refValue() 를 추가로 생성하였다.
      */
     private static String refValue(Grade grade) {
         return Integer.toHexString(System.identityHashCode(grade));
