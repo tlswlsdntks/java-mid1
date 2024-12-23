@@ -9,6 +9,6 @@ public class EnumRefMain3_3 {
     }
 
     private static void printDiscount(Grade grade, int price) {
-        System.out.println(grade.name() + " 등급의 할인 금액 = " + grade.discount(price));
+        System.out.println(grade.name() + " 등급의 할인된 금액 = " + grade.discount(price));
     }
 }

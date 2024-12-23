@@ -9,6 +9,6 @@ public enum Grade {
     }
 
     public int discount(int price) {
-        return price * discountPercent / 100;
+        return price - price * discountPercent / 100;
     }
 }
