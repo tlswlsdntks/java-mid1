@@ -14,8 +14,7 @@ public class RefMain1_3 {
     }
 
     private static void change(Address address, String changeAddress) {
-        //address: x001
         System.out.println("주소 값 변경: " + changeAddress);
-        address.setValue(changeAddress);
+        address.setValue(changeAddress); //x001
     }
 }

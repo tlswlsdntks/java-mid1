@@ -11,9 +11,7 @@ public class ImmutableMyDate {
         this.day = day;
     }
 
-    /**
-     * 불변객체에서 값 변경 이후 반환값을 불변객체로 전달할 시, setMethod() 보다 withMethod()라고 명명하는 것이 관례이다.
-     */
+    //불변객체에서 값 변경 이후 반환 값을 불변객체로 전달할 시, setMethod() 보다 withMethod()라고 명명하는 것이 관례이다.
     public ImmutableMyDate withYear(int newYear) {
         return new ImmutableMyDate(newYear, month, day);
     }

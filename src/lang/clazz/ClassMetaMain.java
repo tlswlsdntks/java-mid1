@@ -27,7 +27,7 @@ public class ClassMetaMain {
         System.out.println();
 
         //상위 클래스 정보 출력
-        System.out.println("Superclass: " + clazz.getSuperclass().getName());
+        System.out.println("superclass: " + clazz.getSuperclass().getName());
         System.out.println();
 
         //인터페이스 정보 출력
@@ -35,6 +35,5 @@ public class ClassMetaMain {
         for (Class anInterface : interfaces) {
             System.out.println("anInterface = " + anInterface);
         }
-
     }
 }
