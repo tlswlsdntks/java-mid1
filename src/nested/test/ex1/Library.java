@@ -1,6 +1,22 @@
 package nested.test.ex1;
 
 public class Library {
+    static class Book {
+        private String title;
+
+        private String author;
+
+        public Book(String title, String author) {
+            this.title = title;
+            this.author = author;
+        }
+
+        @Override
+        public String toString() {
+            return "도서 제목: " + title + ", 저자: " + author;
+        }
+    }
+
     private Book[] books;
     private int bookCount;
 
@@ -23,22 +39,6 @@ public class Library {
         System.out.println("== 책 목록 출력 ==");
         for (int i = 0; i < bookCount; i++) {
             System.out.println(books[i].toString());
-        }
-    }
-
-    private static class Book {
-        private String title;
-
-        private String author;
-
-        public Book(String title, String author) {
-            this.title = title;
-            this.author = author;
-        }
-
-        @Override
-        public String toString() {
-            return "도서 제목: " + title + ", 저자: " + author;
         }
     }
 }

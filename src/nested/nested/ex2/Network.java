@@ -1,12 +1,9 @@
 package nested.nested.ex2;
 
-public class Network {
-    public void sendMessage(String text) {
-        NetworkMessage networkMessage = new NetworkMessage(text);
-        networkMessage.print();
-    }
+import nested.nested.ex1.NetworkMessage;
 
-    private static class NetworkMessage {
+public class Network {
+    static class NetworkMessage {
         private String content;
 
         public NetworkMessage(String content) {
@@ -16,5 +13,9 @@ public class Network {
         public void print() {
             System.out.println(content);
         }
+    }
+
+    public void sendMessage(String text) {
+        new NetworkMessage(text).print();
     }
 }

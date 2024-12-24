@@ -8,7 +8,6 @@ public class OuterClass3 {
                 System.out.println("LocalClass.hello");
             }
         }
-
         new LocalClass().hello();
     }
 }
