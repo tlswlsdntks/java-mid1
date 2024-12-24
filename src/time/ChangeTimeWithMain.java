@@ -21,6 +21,6 @@ public class ChangeTimeWithMain {
         System.out.println("다음주 금요일의 시간대: " + ldt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)));
 
         //이번 달 마지막 일요일
-        System.out.println("이번달 마지막 일요일의 시간대: " + ldt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)));
+        System.out.println("이번 달 마지막 일요일의 시간대: " + ldt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)));
     }
 }

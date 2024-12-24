@@ -15,7 +15,7 @@ public class DurationMain {
         LocalTime lt2 = lt1.plusHours(1);
         LocalTime lt3 = lt2.plusHours(1);
         Duration between = Duration.between(lt2, lt3);
-        System.out.println("특정 시간과의 기간: " + between.getSeconds() + "초");
-        System.out.println("특정 시간과의 기간: " + between.toHours() + "시간 " + between.toMinutesPart() + "분");
+        System.out.println("특정 시간과 차이: " + between.getSeconds() + "초");
+        System.out.println("특정 시간과 차이: " + between.toHours() + "시간 " + between.toMinutesPart() + "분");
     }
 }

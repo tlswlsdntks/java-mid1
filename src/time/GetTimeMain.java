@@ -1,6 +1,7 @@
 package time;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 
 public class GetTimeMain {
@@ -26,7 +27,7 @@ public class GetTimeMain {
         System.out.println();
 
         //편의 메서드 없음
-        System.out.println("00시 00분은 몇 초? " + ldt.get(ChronoField.MINUTE_OF_DAY));
-        System.out.println("00일 00시 00분 00초는 몇 초? " + ldt.get(ChronoField.SECOND_OF_DAY));
+        System.out.println(ldt.getHour() + "시간 " + ldt.getMinute() + "분은 몇 분? " + ldt.get(ChronoField.MINUTE_OF_DAY) + "분");
+        System.out.println(ldt.getHour() + "시간 " + ldt.getMinute() + "분 " +  + ldt.getSecond() + "초는 몇 초? " + ldt.get(ChronoField.SECOND_OF_DAY) + "초");
     }
 }
