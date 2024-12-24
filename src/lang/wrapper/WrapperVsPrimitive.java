@@ -18,7 +18,7 @@ public class WrapperVsPrimitive {
             sumPrimitive += i;
         }
         endTime = System.currentTimeMillis();
-        System.out.println("sumPrimitive = " + sumPrimitive);
+//        System.out.println("sumPrimitive = " + sumPrimitive);
         String time = (endTime - startTime) + "ms"; //1/1000
         System.out.println("기본 자료형 long 실행 시간:  " + time); //233ms
 
@@ -29,7 +29,7 @@ public class WrapperVsPrimitive {
             sumWrapper += i; //오토 박싱
         }
         endTime = System.currentTimeMillis();
-        System.out.println("sumWrapper = " + sumWrapper);
+//        System.out.println("sumWrapper = " + sumWrapper);
         time = (endTime - startTime) + "ms"; //1/1000
         System.out.println("래퍼 클래스 Long 실행 시간:  " + time); //2473ms
     }

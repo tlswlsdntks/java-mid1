@@ -14,7 +14,6 @@ public class LoopStringMain {
             result += "Hello Java ";
         }
         long endTime = System.currentTimeMillis();
-
 //        System.out.println("result = " + result);
         String time = endTime - startTime + "ms"; //1/1000초
         System.out.println("time = " + time); //5024ms
