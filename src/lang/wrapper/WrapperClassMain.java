@@ -14,7 +14,8 @@ public class WrapperClassMain {
          * boolean → Boolean
          */
         System.out.println("박싱");
-        System.out.println("new Integer(10) = " + new Integer(10)); //오류 표기의 원인: 미래에 삭제 예정, 대신에 valueOf()를 사용
+        //오류 표기의 원인: 미래에 삭제 예정이며, 현재는 valueOf() 를 사용한다.
+        System.out.println("new Integer(10) = " + new Integer(10));
         /**
          * Integer: -128 ~ 127 범위의 값을 재사용(캐시)
          * if (i >= IntegerCache.low && i <= IntegerCache.high)

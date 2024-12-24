@@ -5,6 +5,6 @@ public class WrapperTest1 {
         String str1 = "10";
         String str2 = "20";
         int sum = Integer.parseInt(str1) + Integer.parseInt(str2);
-        System.out.println("두 수의 합: " + sum);
+        System.out.println("sum = " + sum);
     }
 }
