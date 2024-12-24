@@ -13,7 +13,7 @@ public class Car {
 
     public void start() {
         engine.start();
-        System.out.println(model + " 시작 완료");
+        System.out.println(model + "가 출발합니다.");
     }
 
     private class Engine {

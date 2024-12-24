@@ -1,7 +1,7 @@
 package nested.inner;
 
 public class InnerOuter {
-    private static int outClassValue = 3;
+    private static int outClassValue = 1;
     private int outInstanceValue = 2;
 
     /**
@@ -12,7 +12,7 @@ public class InnerOuter {
      *      중첩 클래스는 바깥 클래스의 private 멤버에 접근할 수 있다. 그러므로 불필요한 public 메서드를 제거할 수 있다.
      */
     class Inner {
-        private int innerInstanceValue = 1;
+        private int innerInstanceValue = 3;
 
         public void print() {
             //자기 자신에 접근
