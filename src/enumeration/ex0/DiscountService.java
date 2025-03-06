@@ -1,4 +1,4 @@
-package enumeration;
+package enumeration.ex0;
 
 public class DiscountService {
     public int discount(String grade, int price) {

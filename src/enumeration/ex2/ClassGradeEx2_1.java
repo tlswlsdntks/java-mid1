@@ -2,7 +2,7 @@ package enumeration.ex2;
 
 public class ClassGradeEx2_1 {
     public static void main(String[] args) {
-        int price = 10000;
+        int price = 10_000;
         DiscountService discountService = new DiscountService();
         int basic = discountService.discount(ClassGrade.BASIC, price); //x001
         int gold = discountService.discount(ClassGrade.GOLD, price); //x002
