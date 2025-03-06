@@ -19,8 +19,6 @@ public class NetworkServiceV5 {
             client.initError(data);
             client.connect();
             client.send(data);
-        } catch (Exception e) {
-            throw e;
         }
     }
 }
