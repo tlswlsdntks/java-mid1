@@ -6,6 +6,7 @@ public class Ex0Main {
          System.out.println("Hello Java");
          System.out.println("프로그램 종료");
      }
+
      public static void helloSpring() {
          System.out.println("프로그램 시작");
          System.out.println("Hello Spring");

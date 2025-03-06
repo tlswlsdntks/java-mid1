@@ -3,7 +3,6 @@ package lang.math.test;
 import java.util.Random;
 
 public class LottoGenerator {
-
     private final Random random = new Random();
     private int[] lottoNumbers = new int[6];
     private int count = 0;

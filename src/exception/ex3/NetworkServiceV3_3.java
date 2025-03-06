@@ -15,6 +15,8 @@ public class NetworkServiceV3_3 {
             client.send(data);
         } catch (ConnectExceptionV3 | SendExceptionV3 e) {
             System.out.println("[연결 또는 전송 오류] 메세지: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("[알 수 없는 오류] 메세지: " + e.getMessage());
         } finally {
             client.disconnect();
         }

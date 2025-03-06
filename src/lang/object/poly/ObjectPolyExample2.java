@@ -5,7 +5,6 @@ public class ObjectPolyExample2 {
         Dog dog = new Dog();
         Car car = new Car();
         Object object = new Object();
-
         Object[] objects = {dog, car, object};
         size(objects);
     }

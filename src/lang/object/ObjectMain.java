@@ -5,9 +5,7 @@ public class ObjectMain {
         Child child = new Child();
         child.childMethod();
         child.parentMethod();
-
-        //toString(): Object 클래스의 메서드
-        String string = child.toString();
-        System.out.println(string); //lang.object.Child@4e50df2e
+        //@Override
+        System.out.println(child.toString());
     }
 }

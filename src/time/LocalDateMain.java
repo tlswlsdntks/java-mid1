@@ -4,14 +4,10 @@ import java.time.LocalDate;
 
 public class LocalDateMain {
     public static void main(String[] args) {
-        LocalDate nowDate = LocalDate.now();
-        LocalDate ofDate = LocalDate.of(2013, 11, 21);
-
-        System.out.println("현재 날짜 = " + nowDate);
-        System.out.println("지정 날짜 = " + ofDate);
-
-        //계산(불변)
-        ofDate = ofDate.plusDays(10);
-        System.out.println("ofDate = " + ofDate);
+//        LocalDate ld1 = LocalDate.now();
+//        LocalDate ld2 = LocalDate.of(2013, 11, 21);
+        LocalDate ld1 = LocalDate.now();
+        System.out.println("현재 날짜: " + ld1);
+        System.out.println("현재 날짜 + 10일: " + ld1.plusDays(10));
     }
 }

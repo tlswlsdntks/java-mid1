@@ -8,13 +8,12 @@ public class Car {
     public Car(String model, int chargeLevel) {
         this.model = model;
         this.chargeLevel = chargeLevel;
-        //this.engine = new Engine(); // java.lang.NullPointerException
         this.engine = new Engine();
     }
 
     public void start() {
         engine.start();
-        System.out.println(model + " 시작 완료");
+        System.out.println(model + "가 출발합니다.");
     }
 
     private class Engine {

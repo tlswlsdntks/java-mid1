@@ -3,8 +3,8 @@ package lang.string;
 public class StringBasicMain {
     public static void main(String[] args) {
         /**
-         * int, double, boolean: 소문자 → 기본형
-         * String : 대문자 → 참조형
+         * int, double, boolean: 첫글자 소문자 → 기본형
+         * String: 첫글자 대문자 → 참조형
          */
         String str1 = "hello";
         String str2 = new String("hello");

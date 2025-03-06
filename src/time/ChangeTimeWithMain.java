@@ -8,23 +8,19 @@ import java.time.temporal.TemporalAdjusters;
 
 public class ChangeTimeWithMain {
     public static void main(String[] args) {
-        LocalDateTime dt = LocalDateTime.of(2018, 1, 1, 13, 30, 59);
-        System.out.println("dt = " + dt);
+//        LocalDateTime ldt = LocalDateTime.of(2024, 11, 14, 13, 30, 59);
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println("현재 시간대: " + ldt);
 
-        LocalDateTime changedDt1 = dt.with(ChronoField.YEAR, 2020); //불변객체 반환
-        System.out.println("changedDt1 = " + changedDt1);
+        //불변객체 반환
+        //년도 변경
+        System.out.println("년도 변경 이후의 시간대: " + ldt.with(ChronoField.YEAR, 2025));
+        System.out.println("년도 변경 이후의 시간대: " + ldt.withYear(2025));
 
-        LocalDateTime changedDt2 = dt.withYear(2020);
-        System.out.println("changedDt2 = " + changedDt2);
-
-        //TemporalAdjusters 사용
         //다음주 금요일
-        LocalDateTime with1 = dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY));
-        System.out.println("기준 날짜 = " + dt); //2018-01-01T13:30:59
-        System.out.println("다음주 금요일 = " + with1); //2018-01-05T13:30:59
+        System.out.println("다음주 금요일의 시간대: " + ldt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)));
 
-        //이번 달의 마지막 일요일
-        LocalDateTime with2 = dt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY));
-        System.out.println("같은 달의 마지막 일요일 = " + with2); //2018-01-28T13:30:59
+        //이번 달 마지막 일요일
+        System.out.println("이번 달 마지막 일요일의 시간대: " + ldt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)));
     }
 }

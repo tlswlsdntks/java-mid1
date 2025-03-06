@@ -2,13 +2,12 @@ package nested.test;
 
 public class AnonymousMain {
     public static void main(String[] args) {
-        Hello hello = new Hello() {
+        //익명 클래스 호출
+        new Hello() {
             @Override
             public void hello() {
                 System.out.println("Hello.hello");
             }
-        };
-
-        hello.hello();
+        }.hello();
     }
 }

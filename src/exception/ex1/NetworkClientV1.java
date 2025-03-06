@@ -5,7 +5,6 @@ public class NetworkClientV1 {
     public boolean connectError;
     public boolean sendError;
 
-
     public NetworkClientV1(String address) {
         this.address = address;
     }

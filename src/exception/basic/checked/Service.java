@@ -8,8 +8,8 @@ public class Service {
      */
     public void callCatch() {
         try {
-            client.call(); //throw new MyCheckedException("ex");
-        } catch (MyCheckedException e) { //Exception = MyCheckedException
+            client.call();
+        } catch (MyCheckedException e) {
             //예외 처리 로직
             System.out.println("예외 처리, message = " + e.getMessage());
         }
@@ -20,8 +20,8 @@ public class Service {
      * 체크 예외를 밖으로 던지는 코드
      * 체크 예외는 예외를 잡지 않고 밖으로 던지려면 throws 예외를 메서드에 필수로 선언해야 한다.
      */
-    public void catchThrows() throws MyCheckedException {
-        client.call(); //throw new MyCheckedException("ex");
+    public void callThrows() throws MyCheckedException {
+        client.call();
+        System.out.println("정상 호출");
     }
-
 }

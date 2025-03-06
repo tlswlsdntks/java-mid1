@@ -12,7 +12,6 @@ public class DiscountService {
         } else {
             System.out.println(grade + ": 할인X");
         }
-        //GOLD → 10000 * (20 / 100) = 2000
-        return price * disountPercent / 100;
+        return price - price * disountPercent / 100;
     }
 }

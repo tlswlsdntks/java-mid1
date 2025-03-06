@@ -7,33 +7,29 @@ import java.util.Scanner;
 
 public class TestCalendarPrinter {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("년도를 입력하세요: ");
-        int year = scanner.nextInt();
-        System.out.print("월을 입력하세요: ");
-        int month = scanner.nextInt();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("년도를 입력하세요: ");
+//        int year = scanner.nextInt();
+//        System.out.print("월을 입력하세요: ");
+//        int month = scanner.nextInt();
 
+        LocalDate ld = LocalDate.now();
+        int year = ld.getYear();
+        int month = ld.getMonthValue();
         printCalendar(year, month);
     }
 
     private static void printCalendar(int year, int month) {
         LocalDate firstDayOfMonth = LocalDate.of(year, month, 1);
-        //int lastDayOfMonth = firstDayOfMonth.with(TemporalAdjusters.lastDayOfMonth()).getDayOfMonth();
+        LocalDate firstDayOfNextMonth = firstDayOfMonth.plusMonths(1);
+
         //월요일(1%7=1) .. 일요일(7%7=0)
         int offsetWeekDays = firstDayOfMonth.getDayOfWeek().getValue() % 7;
         System.out.println("Su Mo Tu We Th Fr Sa");
         for (int i = 0; i < offsetWeekDays; i++) {
             System.out.print("   ");
         }
-/*
-        for (int i = 1; i <= lastDayOfMonth; i++) {
-            System.out.print(i + (String.valueOf(i).length() > 1 ? " " : "  "));
-            if (firstDayOfMonth.plusDays(i - 1).getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
-                System.out.println();
-            }
-        }
-*/
-        LocalDate firstDayOfNextMonth = firstDayOfMonth.plusMonths(1);
+
         while (firstDayOfMonth.isBefore(firstDayOfNextMonth)) {
             System.out.printf("%2d ", firstDayOfMonth.getDayOfMonth());
             if (firstDayOfMonth.getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
@@ -41,6 +37,5 @@ public class TestCalendarPrinter {
             }
             firstDayOfMonth = firstDayOfMonth.plusDays(1);
         }
-
     }
 }

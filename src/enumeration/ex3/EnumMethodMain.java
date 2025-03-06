@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class EnumMethodMain {
     public static void main(String[] args) {
-        //모든 enum 변환
+        //모든 enum 출력
         Grade[] values = Grade.values();
         System.out.println("values = " + Arrays.toString(values));
         for (Grade value : values) {
@@ -14,10 +14,13 @@ public class EnumMethodMain {
              */
             System.out.println("name = " + value.name() + ", ordinal = " + value.ordinal()); //순번
         }
-        //String → enum 변환, 잘못된 문자면 IllegalArgumentException 발생
+
+        /**
+         * 할당된 enum 확인
+         * 할당되지 않는 enum 일 때, Exception in thread "main" java.lang.IllegalArgumentException: No enum constant enumeration.ex3.Grade.GOLD
+         */
         String input = "GOLD";
-        //박싱
-        Grade gold = Grade.valueOf(input);
-        System.out.println("gold = " + gold); //toString() 오버라이딩 가능
+        Grade gold = Grade.valueOf(input); //박싱
+        System.out.println("GOLD = " + gold);
     }
 }

@@ -4,7 +4,8 @@ public class NestedOuter {
     private static int outClassValue = 3;
     private int outInstanceValue = 2;
 
-    static class Netsed {
+    //정적 중첩 클래스
+    static class Nested {
         private int nestedInsatnceValue = 1;
 
         public void print() {

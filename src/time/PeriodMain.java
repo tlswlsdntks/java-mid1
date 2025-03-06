@@ -5,21 +5,11 @@ import java.time.Period;
 
 public class PeriodMain {
     public static void main(String[] args) {
-        //생성
-        Period period = Period.ofDays(10);
-        System.out.println("period = " + period);
-
-        //계산
-        LocalDate currentDate = LocalDate.of(2030, 1, 1);
-        LocalDate plusDate = currentDate.plus(period);
-        System.out.println("currentDate = " + currentDate);
-        System.out.println("plusDate = " + plusDate);
-
-        //기간 차이
-        LocalDate startDate = LocalDate.of(2023, 1, 1);
-        LocalDate endDate = LocalDate.of(2023, 4, 2);
-        Period between = Period.between(startDate, endDate);
-        System.out.println("between = " + between); //P3M1D
-        System.out.println("기간 = " + between.getMonths() + "개월 " + between.getDays() + "일");
+//        LocalDate ld = LocalDate.of(2030, 1, 1);
+        LocalDate ldt = LocalDate.now();
+        System.out.println("현재 날짜: " + ldt);
+        System.out.println("현재 날짜 + 10일: " + ldt.plus(Period.ofDays(10)));
+        Period between = Period.between(ldt, ldt.plus(Period.ofDays(10)));
+        System.out.println("특정 날짜와 차이: " + between.getMonths() + "개월 " + between.getDays() + "일");
     }
 }

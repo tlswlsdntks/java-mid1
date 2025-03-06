@@ -3,7 +3,6 @@ package nested.anonymous.ex;
 import java.util.Random;
 
 public class Ex1RefMainV3 {
-
     private static void hello(Process process) {
         System.out.println("프로그램 시작");
         //코드 조각 시작
