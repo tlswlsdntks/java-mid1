@@ -1,9 +1,9 @@
 package lang.immutable.change;
 
-public class ImutableObj {
+public class ImmutableObj {
     private final int value;
 
-    public ImutableObj(int value) {
+    public ImmutableObj(int value) {
         this.value = value;
     }
 
@@ -11,7 +11,7 @@ public class ImutableObj {
         return value;
     }
 
-    public ImutableObj add(int addValue) {
-        return new ImutableObj(value + addValue);
+    public ImmutableObj add(int addValue) {
+        return new ImmutableObj(value + addValue);
     }
 }

@@ -9,7 +9,7 @@ public class LoopStringBuilderMain {
          */
         long startTime = System.currentTimeMillis();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 100_000; i++) {
             sb.append("Hello Java ");
         }
         long endTime = System.currentTimeMillis();

@@ -23,7 +23,7 @@ public class LocalDateTimeMain {
         System.out.println();
 
         //특정 시간대 이후
-        System.out.println("특정 시간대 + 1000일: " + ldt2.plusDays(1000));
+        System.out.println("특정 시간대 + 1000일: " + ldt2.plusDays(1_000));
         System.out.println("특정 시간대 + 1년: " + ldt2.plusYears(1));
         System.out.println();
         

@@ -8,7 +8,8 @@ public class TestString6 {
         int index = str.indexOf(key);
         while (index >= 0) {
             count++;
-            index = str.indexOf(key, index + key.length());
+//            index = str.indexOf(key, index - 1 + key.length());
+            index = str.indexOf(key, index + 1);
         }
         System.out.println("count = " + count);
     }

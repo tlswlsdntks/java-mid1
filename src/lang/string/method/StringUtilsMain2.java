@@ -15,7 +15,7 @@ public class StringUtilsMain2 {
         System.out.println("str = " + str);
         System.out.println("String.format(\"num: %d, bool: %b, str: %s\", num, bool, str) = " + String.format("num: %d, bool: %b, str: %s", num, bool, str));
         System.out.println("String.format(\"숫자: %.2f\", 10.1234) = " + String.format("숫자: %.2f", 10.1234));
-        System.out.print("System.out.printf(숫자: %.2f, 10.1234) = ");
+        System.out.print("String.format(\"숫자: %.2f\", 10.1234) = ");
         System.out.printf("숫자: %.2f\n", 10.1234);
         System.out.println("str.matches(\"Hello, (Java!|World)\") = " + str.matches("Hello, (Java!|World)"));
     }
